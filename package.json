@@ -1,0 +1,18 @@
+{
+  "name": "terra.coa.vn",
+  "module": "index.js",
+  "type": "module",
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "axios": "^1.7.7",
+    "moment": "^2.30.1"
+  },
+  "scripts": {
+    "start": "pm2 start pm2.config.cjs"
+  }
+}
