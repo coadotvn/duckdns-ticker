@@ -1,5 +1,4 @@
 import axios from 'axios'
-import moment from 'moment'
 
 const domain = process.env.DUCKDNS_DOMAIN
 const token = process.env.DUCKDNS_TOKEN
@@ -19,9 +18,8 @@ function tick () {
     })
     .then(res => {
       console.log({
-        method: 'duckdns::tick',
         domain,
-        timestamp: moment().format('D/M/Y h:mm a'),
+        timestamp: Date.now(),
         response: res.data
       })
     })
